@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cce47df479a8b8478d476e902ca2967, type: 3}
+  m_Name: Needle Trap
+  m_EditorClassIdentifier: 
+  toolTip: "<b>{Name} [<color=yellow>{HotKey}</color>]</b>\r\n<b>Buy:</b> <color=orange>{PurchaseCost}</color>
+    | <b>Sell:</b> <color=green>{SellCost}</color> | <b>Income:</b> <color=green>{IncomeIncrease}</color>\r\n<b>Armor:</b>
+    {ArmorType} | <b>Health:</b> {HealthMax} | <b>Hits:</b> {UnitType}\r\n<b>Weapon:</b>
+    {WeaponType} | <b>Damage:</b> {AttackDamage} | <b>Range:</b> {AttackRadius} |
+    <b>Speed:</b> {AttackSpeed}\r\n<b>Slow:</b> {UsesSlowEffect} | <b>Speed:</b>
+    -{SlowAmount}\r\n<b>Trap:</b> {UsesTrapEffect} | <b>Damage:</b> {DotAmount}\r"
+  icon: {fileID: 21300000, guid: 08a58c87972b6794993325d92dc73c48, type: 3}
+  HotKey: 52
+  PurchaseCost: 600
+  SellCost: 300
+  IncomeIncrease: 0
+  UnitType: 0
+  ArmorType: 4
+  Defense: 0
+  Evasion: 0
+  DamageReduction: 0
+  SpellReduction: 0
+  HealthMax: 150
+  HealthRegen: 1
+  MovementSpeed: 3.5
+  WeaponType: 0
+  AttackRadius: 20
+  AttackDamage: 40
+  AttackSpeed: 0.5
+  ProjectilePrefab: {fileID: 0}
+  UsesMultiEffect: 0
+  MultiAmount: 3
+  UsesSplashEffect: 0
+  SplashImmune: 0
+  SplashRadius: 5
+  SplashAmount: 0.5
+  UsesSlowEffect: 1
+  SlowImmune: 0
+  SlowAmount: 0.2
+  UsesAuraEffect: 0
+  AuraCanAttack: 0
+  AuraRemovesInvisibility: 0
+  AuraDefenseIncrease: 1
+  AuraHealingAmount: 10
+  AuraDamageIncrease: 10
+  AuraRadiusIncrease: 5
+  AuraSpeedIncrease: 1
+  UsesDotEffect: 0
+  DotImmune: 0
+  DotAmount: 5
+  UsesStunEffect: 0
+  StunImmune: 0
+  StunAmount: 0.5
+  UsesTrapEffect: 1
+  BuildTime: 2

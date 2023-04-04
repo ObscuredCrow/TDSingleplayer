@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa85abcfa5109414faad02d470800c48, type: 3}
+  m_Name: Snake
+  m_EditorClassIdentifier: 
+  toolTip: '<b>{Name} [<color=yellow>{HotKey}</color>]</b>
+
+    <b>Buy:</b> <color=orange>{PurchaseCost}</color>
+    | <b>Income:</b> <color=green>{IncomeIncrease}</color> | <b>Life:</b> <color=green>{LifeDamage}</color>
+
+    <b>Armor:</b>
+    {ArmorType} | <b>Health:</b> {HealthMax} | <b>Movement:</b> {MovementSpeed}
+
+    <b>Defense:</b>
+    {Defense}
+
+    <b>Spawns:</b> {SpawnPrefab} | <b>Amount:</b> {SpawnAmount}'
+  icon: {fileID: 21300000, guid: 45d362df2bf406140a574e565799f713, type: 3}
+  spawnClip: {fileID: 8300000, guid: 9acc45832bb2ddc4c99668cbc26f354f, type: 3}
+  attackClip: {fileID: 0}
+  HotKey: 283
+  PurchaseCost: 2250
+  SellCost: 0
+  IncomeIncrease: 200
+  UnitType: 0
+  ArmorType: 3
+  Defense: 0
+  Evasion: 0
+  DamageReduction: 0
+  SpellReduction: 0
+  HealthMax: 1080
+  HealthRegen: 2
+  MovementSpeed: 2.9
+  WeaponType: 0
+  AttackRadius: 0
+  AttackDamage: 0
+  AttackSpeed: 0
+  ProjectilePrefab: {fileID: 0}
+  UsesMultiEffect: 0
+  MultiAmount: 0
+  UsesSplashEffect: 0
+  SplashImmune: 0
+  SplashRadius: 0
+  SplashAmount: 0
+  UsesSlowEffect: 0
+  SlowImmune: 0
+  SlowAmount: 0
+  UsesAuraEffect: 0
+  AuraCanAttack: 0
+  AuraRemovesInvisibility: 0
+  AuraDefenseIncrease: 1
+  AuraHealingAmount: 0
+  AuraDamageIncrease: 0
+  AuraRadiusIncrease: 0
+  AuraSpeedIncrease: 0
+  UsesDotEffect: 0
+  DotImmune: 0
+  DotAmount: 5
+  UsesStunEffect: 0
+  StunImmune: 0
+  StunAmount: 0.5
+  LifeDamage: 1
+  Invisible: 0
+  Flying: 0
+  SpawnAmount: 2
+  SpawnPrefab: {fileID: 6797081945242957880, guid: 3fc6d913cacbf384aae1336511777f44, type: 3}

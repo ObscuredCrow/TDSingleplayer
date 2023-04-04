@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cce47df479a8b8478d476e902ca2967, type: 3}
+  m_Name: Soldier 4
+  m_EditorClassIdentifier: 
+  toolTip: '<b>{Name} [<color=yellow>{HotKey}</color>]</b>
+
+    <b>Buy:</b> <color=orange>{PurchaseCost}</color>
+    | <b>Sell:</b> <color=green>{SellCost}</color> | <b>Income:</b> <color=green>{IncomeIncrease}</color>
+
+    <b>Armor:</b>
+    {ArmorType} | <b>Health:</b> {HealthMax} | <b>Hits:</b> {UnitType}
+
+    <b>Weapon:</b>
+    {WeaponType} | <b>Damage:</b> {AttackDamage} | <b>Range:</b> {AttackRadius} |
+    <b>Speed:</b> {AttackSpeed}
+
+    <b>Aura:</b> {UsesAuraEffect} | <b>Damage:</b>
+    {AuraDamageIncrease}'
+  icon: {fileID: 21300000, guid: 4f9c2a5fbcd692e4a9071275ffbf9eff, type: 3}
+  spawnClip: {fileID: 0}
+  attackClip: {fileID: 8300000, guid: 86737aa327ee5474db282e45016f64fb, type: 3}
+  HotKey: 113
+  PurchaseCost: 1000
+  SellCost: 500
+  IncomeIncrease: 0
+  UnitType: 0
+  ArmorType: 4
+  Defense: 0
+  Evasion: 0
+  DamageReduction: 0
+  SpellReduction: 0
+  HealthMax: 250
+  HealthRegen: 1
+  MovementSpeed: 3.5
+  WeaponType: 0
+  AttackRadius: 7
+  AttackDamage: 154
+  AttackSpeed: 0.66
+  ProjectilePrefab: {fileID: 0}
+  UsesMultiEffect: 0
+  MultiAmount: 3
+  UsesSplashEffect: 0
+  SplashImmune: 0
+  SplashRadius: 5
+  SplashAmount: 0.5
+  UsesSlowEffect: 0
+  SlowImmune: 0
+  SlowAmount: 0.5
+  UsesAuraEffect: 1
+  AuraCanAttack: 1
+  AuraRemovesInvisibility: 0
+  AuraDefenseIncrease: 1
+  AuraHealingAmount: 0
+  AuraDamageIncrease: 5
+  AuraRadiusIncrease: 0
+  AuraSpeedIncrease: 1
+  UsesDotEffect: 0
+  DotImmune: 0
+  DotAmount: 5
+  UsesStunEffect: 0
+  StunImmune: 0
+  StunAmount: 0.5
+  UsesTrapEffect: 0
+  BuildTime: 2

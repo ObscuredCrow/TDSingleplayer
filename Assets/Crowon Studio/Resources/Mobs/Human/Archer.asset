@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa85abcfa5109414faad02d470800c48, type: 3}
+  m_Name: Archer
+  m_EditorClassIdentifier: 
+  toolTip: "<b>{Name} [<color=yellow>{HotKey}</color>]</b>\n<b>Buy:</b> <color=orange>{PurchaseCost}</color>
+    | <b>Income:</b> <color=green>{IncomeIncrease}</color> | <b>Life:</b> <color=green>{LifeDamage}</color>\n<b>Armor:</b>
+    {ArmorType} | <b>Health:</b> {HealthMax} | <b>Movement:</b> {MovementSpeed}\n<b>Defense:</b>
+    {Defense}\n<b>Weapon:</b> {WeaponType} | <b>Damage:</b> {AttackDamage} | <b>Range:</b>
+    {AttackRadius} | <b>Speed:</b> {AttackSpeed}\r"
+  icon: {fileID: 21300000, guid: cc67398988c8b114c8337d7a8efa85e5, type: 3}
+  spawnClip: {fileID: 8300000, guid: ea453a06155111e4782bfff70ba7992f, type: 3}
+  attackClip: {fileID: 0}
+  HotKey: 291
+  PurchaseCost: 50000
+  SellCost: 0
+  IncomeIncrease: -1250
+  UnitType: 0
+  ArmorType: 4
+  Defense: 2
+  Evasion: 0
+  DamageReduction: 0.11
+  SpellReduction: 0
+  HealthMax: 20000
+  HealthRegen: 0
+  MovementSpeed: 3
+  WeaponType: 3
+  AttackRadius: 24
+  AttackDamage: 54
+  AttackSpeed: 2.5
+  ProjectilePrefab: {fileID: 0}
+  UsesMultiEffect: 0
+  MultiAmount: 0
+  UsesSplashEffect: 0
+  SplashImmune: 0
+  SplashRadius: 0
+  SplashAmount: 0
+  UsesSlowEffect: 0
+  SlowImmune: 0
+  SlowAmount: 0
+  UsesAuraEffect: 0
+  AuraCanAttack: 0
+  AuraRemovesInvisibility: 0
+  AuraDefenseIncrease: 1
+  AuraHealingAmount: 0
+  AuraDamageIncrease: 0
+  AuraRadiusIncrease: 0
+  AuraSpeedIncrease: 0
+  UsesDotEffect: 0
+  DotImmune: 0
+  DotAmount: 5
+  UsesStunEffect: 0
+  StunImmune: 0
+  StunAmount: 0.5
+  LifeDamage: 1
+  Invisible: 0
+  Flying: 0
+  SpawnAmount: 0
+  SpawnPrefab: {fileID: 0}

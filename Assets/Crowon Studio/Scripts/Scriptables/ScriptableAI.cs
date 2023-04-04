@@ -1,0 +1,94 @@
+using System.Text;
+using UnityEngine;
+
+[CreateAssetMenu(menuName = "Crowon Studio/Scriptables/AI", order = -99)]
+public class ScriptableAI : Scriptables
+{
+    public AudioClip spawnClip;
+    public AudioClip attackClip;
+    public KeyCode HotKey;
+    public int PurchaseCost = 10;
+    public int SellCost = 5;
+    public int IncomeIncrease = 0;
+    public Unit UnitType = Unit.Ground;
+    public Armor ArmorType = Armor.Unarmored;
+    public int Defense = 0;
+    [Range(0, 1), Tooltip("1 = No Damage")] public float Evasion = 0;
+    [Range(0, 1), Tooltip("1 = No Damage")] public float DamageReduction = 0;
+    [Range(0, 1), Tooltip("1 = No Damage")] public float SpellReduction = 0;
+    public int HealthMax = 100;
+    public int HealthRegen = 1;
+    public float MovementSpeed = 3.5f;
+    public Weapon WeaponType = Weapon.Normal;
+    public float AttackRadius = 10;
+    public int AttackDamage = 10;
+    public float AttackSpeed = 0.5f;
+    public GameObject ProjectilePrefab;
+    public bool UsesMultiEffect = false;
+    public int MultiAmount = 3;
+    public bool UsesSplashEffect = false;
+    public bool SplashImmune = false;
+    public float SplashRadius = 5;
+    [Range(0, 1)] public float SplashAmount = 0.5f;
+    public bool UsesSlowEffect = false;
+    public bool SlowImmune = false;
+    [Range(0, 1)] public float SlowAmount = 0.5f;
+    public bool UsesAuraEffect = false;
+    public bool AuraCanAttack = false;
+    public bool AuraRemovesInvisibility = false;
+    public int AuraDefenseIncrease = 1;
+    public int AuraHealingAmount = 10;
+    public int AuraDamageIncrease = 10;
+    public int AuraRadiusIncrease = 5;
+    [Range(0f, 2f), Tooltip("0 = 0% Increase")] public float AuraSpeedIncrease = 0;
+    public bool UsesDotEffect = false;
+    public bool DotImmune = false;
+    public int DotAmount = 5;
+    public bool UsesStunEffect = false;
+    public bool StunImmune = false;
+    [Range(0, 1)] public float StunAmount = 0.5f;
+
+    public override string ToolTip() {
+        StringBuilder tip = new StringBuilder(base.ToolTip());
+        tip.Replace("{HotKey}", HotKey.ToString().Replace("Alpha", ""));
+        tip.Replace("{PurchaseCost}", PurchaseCost.ToString());
+        tip.Replace("{SellCost}", SellCost.ToString());
+        tip.Replace("{IncomeIncrease}", IncomeIncrease.ToString());
+        tip.Replace("{ArmorType}", ArmorType.ToString());
+        tip.Replace("{UnitType}", UnitType.ToString());
+        tip.Replace("{HealthMax}", HealthMax.ToString());
+        tip.Replace("{HealthRegen}", HealthRegen.ToString());
+        tip.Replace("{Defense}", Defense.ToString());
+        tip.Replace("{Evasion}", (Evasion * 100).ToString() + " %");
+        tip.Replace("{DamageReduction}", (DamageReduction * 100).ToString() + " %");
+        tip.Replace("{SpellReduction}", (SpellReduction * 100).ToString() + " %");
+        tip.Replace("{MovementSpeed}", MovementSpeed.ToString());
+        tip.Replace("{WeaponType}", WeaponType.ToString());
+        tip.Replace("{AttackRadius}", AttackRadius.ToString());
+        tip.Replace("{AttackDamage}", AttackDamage.ToString());
+        tip.Replace("{AttackSpeed}", AttackSpeed.ToString());
+        tip.Replace("{UsesMultiEffect}", (UsesMultiEffect ? "Yes" : "No"));
+        tip.Replace("{MultiAmount}", MultiAmount.ToString());
+        tip.Replace("{UsesSplashEffect}", (UsesSplashEffect ? "Yes" : "No"));
+        tip.Replace("{SplashImmune}", (SplashImmune ? "Yes" : "No"));
+        tip.Replace("{SplashRadius}", SplashRadius.ToString());
+        tip.Replace("{SplashAmount}", (SplashAmount * 100).ToString() + " %");
+        tip.Replace("{UsesSlowEffect}", (UsesSlowEffect ? "Yes" : "No"));
+        tip.Replace("{SlowImmune}", (SlowImmune ? "Yes" : "No"));
+        tip.Replace("{SlowAmount}", (SlowAmount * 100).ToString() + " %");
+        tip.Replace("{UsesAuraEffect}", (UsesAuraEffect ? "Yes" : "No"));
+        tip.Replace("{AuraRemovesInvisibility}", (AuraRemovesInvisibility ? "Yes" : "No"));
+        tip.Replace("{AuraDefenseIncrease}", AuraDefenseIncrease.ToString());
+        tip.Replace("{AuraHealingAmount}", AuraHealingAmount.ToString());
+        tip.Replace("{AuraDamageIncrease}", AuraDamageIncrease.ToString());
+        tip.Replace("{AuraRadiusIncrease}", AuraRadiusIncrease.ToString());
+        tip.Replace("{AuraSpeedIncrease}", (AuraSpeedIncrease * 100).ToString() + " %");
+        tip.Replace("{UsesDotEffect}", (UsesDotEffect ? "Yes" : "No"));
+        tip.Replace("{DotImmune}", (DotImmune ? "Yes" : "No"));
+        tip.Replace("{DotAmount}", DotAmount.ToString());
+        tip.Replace("{UsesStunEffect}", (UsesStunEffect ? "Yes" : "No"));
+        tip.Replace("{StunImmune}", (StunImmune ? "Yes" : "No"));
+        tip.Replace("{StunAmount}", StunAmount.ToString());
+        return tip.ToString();
+    }
+}

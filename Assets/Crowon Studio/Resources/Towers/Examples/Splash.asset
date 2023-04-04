@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cce47df479a8b8478d476e902ca2967, type: 3}
+  m_Name: Splash
+  m_EditorClassIdentifier: 
+  toolTip: '<b>{Name} [<color=yellow>{HotKey}</color>]</b>
+
+    Splash tower you
+    can build to defend yourself.
+
+
+    <b>Buy:</b> <color=orange>{PurchaseCost}</color>
+    | <b>Sell:</b> <color=green>{SellCost}</color>
+
+    <b>Health:</b> {HealthMax}
+    | <b>Attack:</b> {AttackDamage} | <b>Range:</b> {AttackRadius} | <b>Speed:</b>
+    {AttackSpeed}
+
+    <b>Splash:</b> {UsesSplashEffect} | <b>Radius:</b> {SplashRadius}
+    | <b>Amount:</b> {SplashAmount}'
+  HotKey: 52
+  PurchaseCost: 15
+  SellCost: 7
+  IncomeIncrease: 0
+  HealthMax: 100
+  MovementSpeed: 3.5
+  AttackRadius: 10
+  AttackDamage: 15
+  AttackSpeed: 0.5
+  ProjectilePrefab: {fileID: 37372359646449544, guid: 38a00c21b07943641869ecdf85d546ea, type: 3}
+  UsesMultiEffect: 0
+  MultiAmount: 0
+  UsesSplashEffect: 1
+  SplashImmune: 0
+  SplashRadius: 5
+  SplashAmount: 0.5
+  UsesSlowEffect: 0
+  SlowImmune: 0
+  SlowAmount: 0
+  UsesAuraEffect: 0
+  AuraCanAttack: 0
+  AuraRemovesInvisibility: 0
+  AuraHealingAmount: 0
+  AuraDamageIncrease: 0
+  AuraRadiusIncrease: 0
+  AuraSpeedIncrease: 0.1
+  UsesTrapEffect: 0
+  BuildTime: 2

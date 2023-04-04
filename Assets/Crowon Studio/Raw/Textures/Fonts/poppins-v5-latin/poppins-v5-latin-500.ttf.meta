@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 1418f905c0400264f942f5de0055d1f5
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Poppins Medium
+  fontNames:
+  - Poppins Medium
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: f03776153ba795e40afc96343f688655, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

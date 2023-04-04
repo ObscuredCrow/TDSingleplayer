@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cce47df479a8b8478d476e902ca2967, type: 3}
+  m_Name: Paladin 3
+  m_EditorClassIdentifier: 
+  toolTip: '<b>{Name} [<color=yellow>{HotKey}</color>]</b>
+
+    <b>Buy:</b> <color=orange>{PurchaseCost}</color>
+    | <b>Sell:</b> <color=green>{SellCost}</color> | <b>Income:</b> <color=green>{IncomeIncrease}</color>
+
+    <b>Armor:</b>
+    {ArmorType} | <b>Health:</b> {HealthMax} | <b>Hits:</b> {UnitType}
+
+    <b>Weapon:</b>
+    {WeaponType} | <b>Damage:</b> {AttackDamage} | <b>Range:</b> {AttackRadius} |
+    <b>Speed:</b> {AttackSpeed}
+
+    <b>Multi-Shot:</b> {UsesMultiEffect} | <b>Amount:</b>
+    {MultiAmount}
+
+    <b>Aura:</b> {UsesAuraEffect} | <b>Healing:</b> {AuraHealingAmount}
+
+    <b>Reveal:</b>
+    {AuraRemovesInvisibility}'
+  icon: {fileID: 21300000, guid: b67c60d754613a345a1cd7af198e68d7, type: 3}
+  spawnClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  HotKey: 113
+  PurchaseCost: 4000
+  SellCost: 2000
+  IncomeIncrease: 0
+  UnitType: 2
+  ArmorType: 4
+  Defense: 0
+  Evasion: 0
+  DamageReduction: 0
+  SpellReduction: 0
+  HealthMax: 750
+  HealthRegen: 1
+  MovementSpeed: 3.5
+  WeaponType: 2
+  AttackRadius: 40
+  AttackDamage: 36
+  AttackSpeed: 2
+  ProjectilePrefab: {fileID: 0}
+  UsesMultiEffect: 1
+  MultiAmount: 4
+  UsesSplashEffect: 0
+  SplashImmune: 0
+  SplashRadius: 5
+  SplashAmount: 0.5
+  UsesSlowEffect: 0
+  SlowImmune: 0
+  SlowAmount: 0.5
+  UsesAuraEffect: 1
+  AuraCanAttack: 1
+  AuraRemovesInvisibility: 1
+  AuraDefenseIncrease: 1
+  AuraHealingAmount: 10
+  AuraDamageIncrease: 0
+  AuraRadiusIncrease: 0
+  AuraSpeedIncrease: 1
+  UsesDotEffect: 0
+  DotImmune: 0
+  DotAmount: 5
+  UsesStunEffect: 0
+  StunImmune: 0
+  StunAmount: 0.5
+  UsesTrapEffect: 0
+  BuildTime: 2
